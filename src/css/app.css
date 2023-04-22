@@ -1,3 +1,4 @@
+/* Universal */
 * {
     margin: 0;
     padding: 0;
@@ -8,21 +9,23 @@
   .container {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
+    background: linear-gradient(135deg,#393646, 4F4557);
     padding: 10px;
   }
+
+  /* To Do form field */
   
   .todo-app {
     width: 100%;
     max-width: 540px;
-    background: #fff;
+    background:#F4EEE0;
     margin: 100px auto 20px;
     padding: 40px 30px;
     border-radius: 10px;
   }
   
   .todo-app h2 {
-    color: #002765;
+    color:#393646;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -33,10 +36,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #edeef0;
+    background: #4F4557;
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
+  }
+
+  ::placeholder{
+    color: #F4EEE0;
   }
   
   input {
@@ -47,17 +54,22 @@
     padding: 10px;
   }
   
+  input:focus{
+    color: #F4EEE0;
+  }
+  /* Add Button */
   button {
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #ff5945;
-    color: #fff;
+    background:#F4EEE0;
+    color:#393646;
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
   }
   
+  /* List */
   ul li {
     list-style: none;
     font-size: 17px;
@@ -75,17 +87,18 @@
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    border: #153677;
+    border:#4F4557;
     border-style: dashed;
     top: 6px;
     left: 8px;
   }
   
   .checked{
-      color: #555;
+      color:#4F4557;
       text-decoration: line-through;
   }
   
+  /* Delete button */
   ul li span{
     position: absolute;
     right: 0;
@@ -93,12 +106,12 @@
     width: 40px;
     height: 40px;
     font-size: 22px;
-    color: #555;
+    color:#6D5D6E;
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
   }
   
   ul li span:hover{
-     background: #edeef0;
+     background:#4F4557;
   }

@@ -1,10 +1,8 @@
-import addTask from "../functions/addTask";
-import updateLocalStorage from "../functions/updateLocalStorage";
-import showListFromLocalStorage from "../functions/showListFromLocalStorage";
-
+import { updateUI,addToDo } from "../functions/toDoFunctions";
+import { showListFromLocalStorage,updateLocalStorage, } from "../functions/localStorageFunctions";
 
 function createHomePage() {
-    addTask();
+    addToDo();
     updateLocalStorage();
     showListFromLocalStorage();
 }
